@@ -10,7 +10,6 @@ function App() {
       <Landscapes />
       <TravelExhibition />
       <About />
-      <Landscapes />
     </div>
   );
 }
