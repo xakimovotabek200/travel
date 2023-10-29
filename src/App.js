@@ -1,7 +1,7 @@
 import "./App.css";
-
+import Landscapes from "./pages/Landscapes/Landscapes";
 function App() {
-  return <div className="App"></div>;
+  return <Landscapes />;
 }
 
 export default App;
