@@ -7,21 +7,22 @@ import { GrPlan } from "react-icons/gr";
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import { TfiGallery } from "react-icons/tfi";
 import { AiOutlineCloseCircle } from "react-icons/ai";
+import { TiTickOutline } from "react-icons/ti";
 // import { RxAvatar } from "react-icons/rx";
 // import { AiOutlineMail } from "react-icons/ai";
 // import { BsTelephone } from "react-icons/bs";
 // import { MdOutlineCalendarMonth } from "react-icons/md";
 // import { IoTicketSharp } from "react-icons/io";
 // import { AiOutlineMessage } from "react-icons/ai";
-import img1 from "../../Images/Landscapes/273 1.png";
-import img2 from "../../Images/Landscapes/2.png";
-import img3 from "../../Images/Landscapes/3.png";
-import img4 from "../../Images/Landscapes/4.png";
-import img5 from "../../Images/Landscapes/5.png";
-import img6 from "../../Images/Landscapes/6.png";
-import img7 from "../../Images/Landscapes/7.png";
+import img1 from "../../img/Landscapes/273 1.png";
+import img2 from "../../img/Landscapes/2.png";
+import img3 from "../../img/Landscapes/3.png";
+import img4 from "../../img/Landscapes/4.png";
+import img5 from "../../img/Landscapes/5.png";
+import img6 from "../../img/Landscapes/6.png";
+import img7 from "../../img/Landscapes/7.png";
 
-function  Landscapes() {
+function Landscapes() {
   const { TextArea } = Input;
   const onChange = (e) => {
     console.log(e);
@@ -131,7 +132,6 @@ function  Landscapes() {
                     <TiTickOutline />5 star Accomodations
                   </span>{" "}
                   <span className="span-2">
-                    {" "}
                     <TiTickOutline /> Airport Transfer
                   </span>{" "}
                   <span className="span-2">
@@ -171,7 +171,7 @@ function  Landscapes() {
               </p>
             </div>
             <div>
-              <Input placeholder=' Name' onChange={onChange} />{" "}
+              <Input placeholder=" Name" onChange={onChange} />{" "}
               <Input placeholder="Email" onChange={onChange} />{" "}
               <Input placeholder="Confirm Email" onChange={onChange} />{" "}
               <Input type="number" placeholder="Phone" onChange={onChange} />{" "}
