@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Playpen+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--background-color);
+  font-family: "Playpen Sans", cursive;
+}
+:root {
+  --background-color: #fff;
+  --white: #fff;
+  --black: black;
+  --jigarang: #df6951;
+}
+header {
+  background-image: url("../img/1.png");
+  background-size: cover;
+  background-position: center;
+  height: 620px;
+}
+ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+li img:nth-child(1) {
+}
+li {
+  list-style: none;
+  margin-top: 20px;
+}
+li:nth-child(2) {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+li h1,
+p {
+  color: var(--white);
+}
+li p {
+  font-size: 18px;
+}
+li button {
+  width: 150px;
+  height: 48px;
+  border-radius: 5px;
+  flex-shrink: 0;
+  background-color: var(--jigarang);
+  border: none;
+  color: var(--white);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+li button:hover {
+  background-color: var(--white);
+  color: var(--jigarang);
+  transition: 0.6s;
+  box-shadow: var(--jigarang) 0px 5px 15px;
+}
+button,
+img {
+  cursor: pointer;
+}
+.words {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.words p {
+  color: var(--black);
+}
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 400px;
+}
+.main_fan {
+  width: 1328px;
+  height: 1641px;
+  flex-shrink: 0;
+  background: #fff;
+  box-shadow: 0px 4px 48px 12px rgba(0, 0, 0, 0.09);
+  border-radius: 5px;
+}
+.easy {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
