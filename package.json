@@ -6,9 +6,14 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "antd": "^5.10.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+<<<<<<< HEAD
     "react-router-dom": "^6.17.0",
+=======
+    "react-icons": "^4.11.0",
+>>>>>>> db4f70b5adef3a80929660aa05d4d3678fee97cf
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
