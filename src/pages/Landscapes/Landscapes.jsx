@@ -7,16 +7,12 @@ import { GrPlan } from "react-icons/gr";
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import { TfiGallery } from "react-icons/tfi";
 
-function Landscapes() {
+function  Landscapes() {
   const { TextArea } = Input;
   const onChange = (e) => {
     console.log(e);
   };
   return (
-<<<<<<< HEAD
-    <div></div>
-  )
-=======
     <>
       <div>
         {" "}
@@ -156,7 +152,6 @@ function Landscapes() {
       </div>
     </>
   );
->>>>>>> db4f70b5adef3a80929660aa05d4d3678fee97cf
 }
 
 export default Landscapes;

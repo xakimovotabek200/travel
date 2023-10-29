@@ -1,7 +1,6 @@
 import React from "react";
 import Ellepsi from "../../img/Ellipse 626.png";
 import Ellepsis from "../../img/Ellipse 627.png";
-import Opacha from "../../img/Rectangle19353.png";
 import "./About.css";
 
 const About = () => {

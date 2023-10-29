@@ -1,10 +1,9 @@
 import React from "react";
-import "./Sodiqjon.css";
-import { Link } from "react-router-dom";
 import img2 from "../img/2.png";
 import img3 from "../img/3.png";
 import img4 from "../img/4.png";
 import img5 from "../img/5.png";
+import "./Sodiqjon.css";
 
 function header_sodiqjon() {
   return (
@@ -53,29 +52,29 @@ function header_sodiqjon() {
               <button>Get in Touch</button>
             </li>
           </ul>
-      <div className="main">
-        <div className="main_fan">
-            <div className="easy">
-              <div className="words">
-                <img src={img2} alt="" />
-                <p>Date</p>
+          <div className="main">
+            <div className="main_fan">
+              <div className="easy">
+                <div className="words">
+                  <img src={img2} alt="" />
+                  <p>Date</p>
+                </div>
+                <div className="words">
+                  <img src={img3} alt="" />
+                  <p>price low to High</p>
+                </div>
+                <div className="words">
+                  <img src={img4} alt="" />
+                  <p>Price High to low</p>
+                </div>
+                <div className="words">
+                  <img src={img5} alt="" />
+                  <p>Name (A-z)</p>
+                </div>
               </div>
-              <div className="words">
-                <img src={img3} alt="" />
-                <p>price low to High</p>
-              </div>
-              <div className="words">
-                <img src={img4} alt="" />
-                <p>Price High to low</p>
-              </div>
-              <div className="words">
-                <img src={img5} alt="" />
-                <p>Name (A-z)</p>
-              </div>
+            </div>
           </div>
         </div>
-      </div>
-      </div>
       </header>
     </div>
   );
