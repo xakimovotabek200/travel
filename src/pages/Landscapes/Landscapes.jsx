@@ -135,8 +135,7 @@ function Landscapes() {
             <Input type="number" placeholder="Phone" onChange={onChange} />{" "}
             <Input
               type="month"
-              name="bdaymonth"
-              placeholder="Name"
+              placeholder="dd-mm-yy"
               onChange={onChange}
             />{" "}
             <Input
