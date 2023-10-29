@@ -1,6 +1,20 @@
 import React from "react";
 import Ellepsi from "../../img/Ellipse 626.png";
 import Ellepsis from "../../img/Ellipse 627.png";
+import Abouts from "../../img/about-us-img-21.png";
+import Group from "../../img/Group 1000001755.png";
+import Image from "./../../img/image 919.png";
+import Image1 from "../../img/1.png";
+import Image2 from "../../img/2.png";
+import Image4 from "../../img/4.png";
+import Image5 from "../../img/5.png";
+import Image6 from "../../img/6.png";
+import Image7 from "../../img/7.png";
+import Image8 from "../../img/8.png";
+import Image9 from "../../img/9.png";
+import Image10 from "../../img/10.png";
+import Image11 from "../../img/11.png";
+
 import "./About.css";
 
 const About = () => {
@@ -41,6 +55,48 @@ const About = () => {
               fill="#DF6951"
             />
           </svg>
+        </div>
+      </div>
+      <div className="bottom">
+        <div className="bottom_flex">
+          <img src={Abouts} alt="" />
+        </div>
+        <div className="bottom_flexx">
+          <div className="dur">
+            <p>Trend</p>
+            <h1> Our Popular Tour Plans</h1>
+            <h6>
+              Et labore harum non nobis ipsum eum molestias mollitia et corporis
+              praesentium a laudantium. Et labore harum non nobis ipsum eum
+              molestias mollitia et corporis praesentium a laudantium.
+            </h6>
+            <div className="imgss">
+              <img src={Group} alt="" />
+              <img src={Group} alt="" />
+              <img src={Group} alt="" />
+            </div>
+          </div>
+          <div className="flexx">
+            <img src={Image} alt="" />
+          </div>
+        </div>
+      </div>
+      <div className="Opachalar">
+        <div className="head">
+          <p>Explore more</p>
+          <h1>Our International Packages</h1>
+        </div>
+        <div className="grid">
+          <img src={Image1} alt="" />
+          <img src={Image2} alt="" />
+          <img src={Image5} alt="" />
+          <img src={Image6} alt="" />
+          <img src={Image7} alt="" />
+          <img src={Image8} alt="" />
+          <img src={Image9} alt="" />
+          <img src={Image10} alt="" />
+          <img src={Image11} alt="" />
+          
         </div>
       </div>
     </div>

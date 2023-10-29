@@ -183,32 +183,32 @@ function img_text() {
               iusto aut magni nesciunt? Quo quidem neque iste expedita est dolo.
             </p>
           </div>
-         <div className="inputs">
-         <div className="input">
-            <img src={img10} alt="" />
-            <input type="text" placeholder="Search Tour" />
+          <div className="inputs">
+            <div className="input">
+              <img src={img10} alt="" />
+              <input type="text" placeholder="Search Tour" />
+            </div>
+            <div className="input">
+              <img src={img11} alt="" />
+              <input type="text" placeholder="Where To?" />
+            </div>
+            <div className="input">
+              <img src={img12} alt="" />
+              <input type="text" placeholder="Date" />
+            </div>
           </div>
-          <div className="input">
-            <img src={img11} alt="" />
-            <input type="text" placeholder="Where To?" />
+          <div className="quit">
+            <h1>Filter by price</h1>
+            <div className="div_n1">
+              <div className="small"></div>
+              <div className="big"></div>
+              <div className="small"></div>
+            </div>
+            <p>Price: $12 - $3600</p>
           </div>
-          <div className="input">
-            <img src={img12} alt="" />
-            <input type="text" placeholder="Date" />
+          <div className="game_over">
+            <img src={img13} alt="" />
           </div>
-         </div>
-         <div className="quit">
-          <h1>Filter by price</h1>
-          <div className="div_n1">
-            <div className="small"></div>
-            <div className="big"></div>
-            <div className="small"></div>
-          </div>
-          <p>Price: $12 - $3600</p>
-         </div>
-         <div className="game_over">
-          <img src={img13} alt="" />
-         </div>
         </div>
       </div>
     </div>

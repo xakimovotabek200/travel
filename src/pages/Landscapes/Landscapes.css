@@ -16,6 +16,20 @@
     display: flex;
 }
 
+.top-buttom-right,
+.top-buttom-left {
+    width: 50%;
+}
+
+.top-buttom-right-message {
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 350px;
+    height: 677px;
+    flex-shrink: 0;
+    background: #EDEDED;
+}
+
 .texts-1 {
     display: flex;
     align-items: center;
@@ -109,4 +123,50 @@
     font-weight: 400;
     line-height: 26px;
     /* 162.5% */
+}
+
+.text-9 {
+    color: #181E4B;
+    text-align: center;
+    font-family: Volkhov;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.text-10 {
+    color: #000;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    /* 162.5% */
+}
+
+.button-1 {
+    width: 220px;
+    display: inline-flex;
+    padding: 16px 46.561px 15.416px 47px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background: #DF6951;
+    border: none;
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.inputs-1 input,
+textarea {
+    width: 259px;
+    height: 56px;
+    flex-shrink: 0;
 }

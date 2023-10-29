@@ -20,6 +20,7 @@ header {
   background-size: cover;
   background-position: center;
   height: 620px;
+  margin-top: 1100px;
 }
 ul {
   display: flex;
