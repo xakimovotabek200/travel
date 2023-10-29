@@ -21,7 +21,7 @@ import img5 from "../../Images/Landscapes/5.png";
 import img6 from "../../Images/Landscapes/6.png";
 import img7 from "../../Images/Landscapes/7.png";
 
-function Landscapes() {
+function  Landscapes() {
   const { TextArea } = Input;
   const onChange = (e) => {
     console.log(e);
