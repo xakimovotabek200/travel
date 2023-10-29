@@ -1,0 +1,13 @@
+.top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.top h1 {
+    color: #343434;
+    font-size: 20px;
+}
+
+.top .i {
+    width: 26px;
+}
