@@ -13,6 +13,7 @@ body {
   --white: #fff;
   --black: black;
   --jigarang: #df6951;
+  --color: #181e4b;
 }
 header {
   background-image: url("../img/1.png");
@@ -78,8 +79,8 @@ img {
 }
 .main_fan {
   padding: 25px;
-  width: 1328px;
-  height: 1940px;
+  width: 1360px;
+  height: 200px;
   flex-shrink: 0;
   background: #fff;
   box-shadow: 0px 4px 48px 12px rgba(0, 0, 0, 0.09);
@@ -91,10 +92,15 @@ img {
   justify-content: space-around;
   align-items: center;
 }
-.imgs {
+.img_text {
+  display: flex;
+  justify-content: space-between;
   margin-top: 100px;
+}
+.imgs {
   display: grid;
   grid-template-columns: auto auto;
+  gap: 25px;
 }
 .img {
   width: 370.838px;
@@ -145,7 +151,7 @@ img {
   width: 328.672px;
 }
 .words h1 {
-  color: var(--black);
+  color: var(--color);
   font-size: 34.188px;
   font-weight: 700;
 }
@@ -165,4 +171,83 @@ img {
   width: 16px;
   height: 15px;
   flex-shrink: 0;
+}
+.background {
+  width: 481px;
+  height: 728px;
+  background: #ededed;
+}
+.text_fan {
+  text-align: center;
+  padding: 10px;
+}
+.text_fan h1 {
+  color: var(--color);
+  font-size: 42px;
+  font-weight: 700;
+}
+.text_fan p {
+  width: 401px;
+  color: var(--black);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 20px auto;
+}
+.input {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+  margin: 0 auto;
+  width: 300px;
+  padding: 20px 20px;
+  margin-top: 25px;
+}
+.input img {
+  width: 20px;
+  height: 20px;
+}
+.input input {
+  border: none;
+  background: #ededed;
+  outline: none;
+}
+.quit {
+  /* text-align: center; */
+  margin: 20px auto;
+}
+.div_n1 {
+  display: flex;
+  width: 300px;
+  /* height: 41px; */
+  margin: 20px auto;
+}
+.small {
+  background: #df6951;
+  width: 40px;
+  height: 41px;
+}
+.big {
+  width: 250px;
+  height: 41px;
+  background-color: var(--white);
+}
+.quit h1 {
+  color: #343434;
+  font-size: 20px;
+  font-weight: 700;
+  margin-left: 92px;
+}
+.quit p {
+  color: var(--black);
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 20px;
+  margin-left: 94px;
+}
+.game_over img{
+  width: 500px;
+  height: 420px;
+  margin-top: 420px;
 }
