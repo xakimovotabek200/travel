@@ -8,12 +8,6 @@ import { HiOutlineLocationMarker } from "react-icons/hi";
 import { TfiGallery } from "react-icons/tfi";
 import { AiOutlineCloseCircle } from "react-icons/ai";
 import { TiTickOutline } from "react-icons/ti";
-// import { RxAvatar } from "react-icons/rx";
-// import { AiOutlineMail } from "react-icons/ai";
-// import { BsTelephone } from "react-icons/bs";
-// import { MdOutlineCalendarMonth } from "react-icons/md";
-// import { IoTicketSharp } from "react-icons/io";
-// import { AiOutlineMessage } from "react-icons/ai";
 import img1 from "../../img/Landscapes/273 1.png";
 import img2 from "../../img/Landscapes/2.png";
 import img3 from "../../img/Landscapes/3.png";
@@ -70,7 +64,7 @@ function Landscapes() {
                 aut provident aliquam. Aut aspernatur consequuntur eum quaerat
                 distinctio ut inventore aliquid et quasi alias ut rerum suscipit
                 et nihil deleniti. Ex optio sequi et quos praesentium in nostrum
-                labore nam rerum iusto aut magni nesciunt? Quo quidem neque iste
+                labore nam rerum justo aut magni nesciunt? Quo quidem neque iste
                 expedita est dolor similique ut quasi maxime ut deserunt autem
                 At praesentium voluptatem aut libero nisi. Et eligendi sint ab
                 cumque veritatis aut provident aliquam. Aut aspernatur
@@ -161,32 +155,42 @@ function Landscapes() {
             </div>
           </div>
           <div className="top-buttom-right">
-            <div>
-              {" "}
-              <h1>Book This Tour </h1>
-              <p>
-                Ex optio sequi et quos praesentium in nostrum labore nam rerum
-                iusto aut magni nesciunt? Quo quidem neque iste expedita est
-                dolo.
-              </p>
+            <div className="top-buttom-right-message">
+              <div>
+                {" "}
+                <h1 className="text-9">Book This Tour </h1>
+                <p className="text-10">
+                  Ex optio sequi et quos praesentium in nostrum labore nam rerum
+                  iusto aut magni nesciunt? Quo quidem neque iste expedita est
+                  dolo.
+                </p>
+              </div>
+              <div className="inputs-1">
+                <Input placeholder=" Name" onChange={onChange} />{" "}
+                <Input placeholder="Email" onChange={onChange} />{" "}
+                <Input placeholder="Confirm Email" onChange={onChange} />{" "}
+                <Input type="number" placeholder="Phone" onChange={onChange} />{" "}
+                <Input
+                  type="month"
+                  placeholder="dd-mm-yy"
+                  onChange={onChange}
+                />{" "}
+                <Input
+                  type="number"
+                  placeholder="Number of ticket"
+                  onChange={onChange}
+                />{" "}
+                <TextArea
+                  placeholder="Message"
+                  onChange={onChange}
+                  style={{ width: "281px", height: "56px" }}
+                />
+                <button className="button-1">Check Availability</button>
+                <button className="button-1">Book Now</button>
+              </div>
             </div>
             <div>
-              <Input placeholder=" Name" onChange={onChange} />{" "}
-              <Input placeholder="Email" onChange={onChange} />{" "}
-              <Input placeholder="Confirm Email" onChange={onChange} />{" "}
-              <Input type="number" placeholder="Phone" onChange={onChange} />{" "}
-              <Input type="month" placeholder="dd-mm-yy" onChange={onChange} />{" "}
-              <Input
-                type="number"
-                placeholder="Number of ticket"
-                onChange={onChange}
-              />{" "}
-              <TextArea placeholder="Message" onChange={onChange} />
-              <button>Check Availability</button>
-              <button>Book Now</button>
-            </div>
-            <div>
-              <img src={img1} alt="" />
+              <img src={img1} alt="7" />
             </div>
           </div>
         </div>
