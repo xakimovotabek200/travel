@@ -79,7 +79,6 @@ svg {
     display: grid;
     grid-template-columns: auto auto;
     justify-content: space-between;
-    border: 1px double red;
 }
 
 .dur {
