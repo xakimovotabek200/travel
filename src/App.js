@@ -4,10 +4,11 @@ import TravelExhibition from "./components/sodiqjon_exhibition/header_sodiqjon";
 // import Landscapes from "./pages/Landscapes/Landscapes";
 // import About from "./pages/about/About";
 import { Index } from "./pages/itravel/end";
+import Home from "./Home/home.jsx"
+
 function App() {
   return (
     <div>
-      <Navbar />
       <Home />
       <Index />
       {/* <Landscapes /> */}
@@ -17,5 +18,4 @@ function App() {
     </div>
   );
 }
-
-export default App;
+export default App

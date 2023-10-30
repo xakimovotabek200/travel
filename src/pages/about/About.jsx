@@ -14,8 +14,8 @@ import Image8 from "../../img/8.png";
 import Image9 from "../../img/9.png";
 import Image10 from "../../img/10.png";
 import Image11 from "../../img/11.png";
-
 import "./About.css";
+import "../../Home/home.css";
 
 const About = () => {
   return (
@@ -96,7 +96,6 @@ const About = () => {
           <img src={Image9} alt="" />
           <img src={Image10} alt="" />
           <img src={Image11} alt="" />
-          
         </div>
       </div>
     </div>
