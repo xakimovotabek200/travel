@@ -1,23 +1,23 @@
-import React from 'react'
-import './home.css'
-import flyemirates from './img/image 909.png'
-import guide1 from './img/tour-guide 1.png'
-import airbnb from './img/image 911.png'
-import turkish from './img/image 913.png'
-import aswiss from './img/image 912 (1).png'
-import romanticOpa from './img/image 50.png'
-import banner1 from './img/Rectangle 19294.png'
-import kichikrasm1 from './img/Rectangle 19296.png'
-import paris from './img/image 51.png'
-import plane from './img/travelling 1.png'
-import hands1 from './img/hands 1.png'
-import medicalteam1 from './img/medical-team 1.png'
-import group7 from './img/Group 7.svg'
-import planeImage from './img/image 872.png'
-import hawaii from './img/Rectangle 17 (1).png'
-import product1 from './img/Rectangle 19305.png'
-import logo1 from './img/Ellipse 623.svg'
-import gameOver from './gameOver'
+import React from "react";
+import "./home.css";
+import flyemirates from "./img/image 909.png";
+import guide1 from "./img/tour-guide 1.png";
+import airbnb from "./img/image 911.png";
+import turkish from "./img/image 913.png";
+import aswiss from "./img/image 912 (1).png";
+import romanticOpa from "./img/image 50.png";
+import banner1 from "./img/Rectangle 19294.png";
+import kichikrasm1 from "./img/Rectangle 19296.png";
+import paris from "./img/image 51.png";
+import plane from "./img/travelling 1.png";
+import hands1 from "./img/hands 1.png";
+import medicalteam1 from "./img/medical-team 1.png";
+import group7 from "./img/Group 7.svg";
+import planeImage from "./img/image 872.png";
+import hawaii from "./img/Rectangle 17 (1).png";
+import product1 from "./img/Rectangle 19305.png";
+import logo1 from "./img/Ellipse 623.svg";
+import gameOver from "./gameOver";
 import "./home.css";
 // import logo1 from "./img/Ellipse 623.svg";
 // import group7 from "./img/Group 7.svg";
@@ -38,15 +38,9 @@ import HomeRoutes from "../components/HomeRouters/HomeRoutes";
 
 function Home() {
   return (
-<<<<<<< HEAD
-    <div className='allofthem'>
-      <div className='landing'>
-        
-=======
     <div className="allofthem">
       <div className="landing">
         <HomeRoutes />
->>>>>>> 124a45d83488cb7526cb30c852d472bf31ce89c3
         <div className="main_text">
           <h1>
             No matter where <br /> you’re going to, we’ll <br /> take you there
