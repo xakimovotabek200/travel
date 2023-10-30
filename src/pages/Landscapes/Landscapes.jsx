@@ -51,7 +51,7 @@ function Landscapes() {
               <span className="span-1"> / </span>
               <h1 className="text-3">Per Couple</h1>
             </div>
-            <div>
+            <div className="texts-2">
               <Rate />
               <h1 className="text-4">(2.3k review)</h1>
             </div>
@@ -78,22 +78,22 @@ function Landscapes() {
                 <h1 className="text-6">Destination</h1>{" "}
                 <span className="span-2">: Zurich, Switzerland</span>
               </div>
-              <div>
+              <div className="texts-3">
                 {" "}
                 <h1 className="text-6">Departure</h1>{" "}
                 <span className="span-2">: Main Sqaure, New City</span>
               </div>{" "}
-              <div>
+              <div className="texts-3">
                 {" "}
                 <h1 className="text-6">Departure Time</h1>
                 <span className="span-2">: Approximately 08 : 10 AM</span>
               </div>
-              <div>
+              <div className="texts-3">
                 {" "}
                 <h1 className="text-6">Return Time</h1>{" "}
                 <span className="span-2">: Approximately 07 : 20 PM</span>
               </div>
-              <div>
+              <div className="texts-3">
                 {" "}
                 <h1 className="text-6">Dress Code</h1>
                 <span className="span-2">: Casual, comfortable and light</span>
@@ -183,7 +183,7 @@ function Landscapes() {
                 <TextArea
                   placeholder="Message"
                   onChange={onChange}
-                  style={{ width: "281px", height: "56px" }}
+                  style={{ width: "261px", height: "56px" }}
                 />
                 <button className="button-1">Check Availability</button>
                 <button className="button-1">Book Now</button>

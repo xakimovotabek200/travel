@@ -36,6 +36,7 @@
 }
 
 .text-1 {
+    margin-right: 20px;
     color: #181E4B;
     font-family: Volkhov;
     font-size: 31.622px;
@@ -65,7 +66,15 @@
     text-transform: capitalize;
 }
 
+.texts-2 {
+    display: flex;
+    align-items: center;
+}
+.texts-3{
+    margin-top: 20px;
+}
 .text-4 {
+    margin-left: 20px;
     color: #5E6282;
     font-family: Poppins;
     font-size: 16px;
