@@ -1977,11 +1977,6 @@
 
 "@testing-library/dom@>=7.21.4":
   version "9.3.3"
-<<<<<<< HEAD
-  resolved "https://registry.npmjs.org/@testing-library/dom/-/dom-9.3.3.tgz"
-  integrity sha512-fB0R+fa3AUqbLHWyxXa2kGVtf1Fe1ZZFr0Zp6AIbIAzXb2mKbEXl+PCQNUOaq5lbTab5tfctfXRNsWXxa2f7Aw==
-=======
->>>>>>> 1fa9bf29e77e1e0913152a8694f897ca65cf5308
   dependencies:
     "@babel/code-frame" "^7.10.4"
     "@babel/runtime" "^7.12.5"
@@ -3031,6 +3026,15 @@ axe-core@^4.6.2:
   resolved "https://registry.npmjs.org/axe-core/-/axe-core-4.8.2.tgz"
   integrity sha512-/dlp0fxyM3R8YW7MFzaHWXrf4zzbr0vaYb23VBFCl83R7nWNPg/yaQw2Dc8jzCMmDVLhSdzH8MjrsuIUuvX+6g==
 
+axios@^1.6.0:
+  version "1.6.0"
+  resolved "https://registry.npmjs.org/axios/-/axios-1.6.0.tgz"
+  integrity sha512-EZ1DYihju9pwVB+jg67ogm+Tmqc6JmhamRN6I4Zt8DfZu5lbcQGw3ozH9lFejSJgs/ibaef3A9PMXPLeefFGJg==
+  dependencies:
+    follow-redirects "^1.15.0"
+    form-data "^4.0.0"
+    proxy-from-env "^1.1.0"
+
 axobject-query@^3.1.1:
   version "3.2.1"
   resolved "https://registry.npmjs.org/axobject-query/-/axobject-query-3.2.1.tgz"
@@ -3356,11 +3360,6 @@ caniuse-api@^3.0.0:
 
 caniuse-lite@^1.0.0, caniuse-lite@^1.0.30001538, caniuse-lite@^1.0.30001541:
   version "1.0.30001555"
-<<<<<<< HEAD
-  resolved "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001555.tgz"
-  integrity sha512-NzbUFKUnJ3DTcq6YyZB6+qqhfD112uR3uoEnkmfzm2wVzUNsFkU7AwBjKQ654Sp5cau0JxhFyRSn/tQZ+XfygA==
-=======
->>>>>>> 1fa9bf29e77e1e0913152a8694f897ca65cf5308
 
 case-sensitive-paths-webpack-plugin@^2.4.0:
   version "2.4.0"
@@ -4992,7 +4991,7 @@ flatted@^3.2.9:
   resolved "https://registry.npmjs.org/flatted/-/flatted-3.2.9.tgz"
   integrity sha512-36yxDn5H7OFZQla0/jFJmbIKTdZAQHngCedGxiMmpNfEZM0sdEeT+WczLQrjK6D7o2aiyLYDnkw0R3JK0Qv1RQ==
 
-follow-redirects@^1.0.0:
+follow-redirects@^1.0.0, follow-redirects@^1.15.0:
   version "1.15.3"
   resolved "https://registry.npmjs.org/follow-redirects/-/follow-redirects-1.15.3.tgz"
   integrity sha512-1VzOtuEM8pC9SFU1E+8KfTjZyMztRsgEfwQl44z8A25uy13jSzTj6dyK2Df52iV0vgHCfBwLhDWevLn95w5v6Q==
@@ -5027,6 +5026,15 @@ form-data@^3.0.0:
   version "3.0.1"
   resolved "https://registry.npmjs.org/form-data/-/form-data-3.0.1.tgz"
   integrity sha512-RHkBKtLWUVwd7SqRIvCZMEvAMoGUp0XU+seQiZejj0COz3RI3hWP4sCv3gZWWLjJTd7rGwcsF5eKZGii0r/hbg==
+  dependencies:
+    asynckit "^0.4.0"
+    combined-stream "^1.0.8"
+    mime-types "^2.1.12"
+
+form-data@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.npmjs.org/form-data/-/form-data-4.0.0.tgz"
+  integrity sha512-ETEklSGi5t0QMZuiXoA/Q6vcnxcLQP5vdugSpuAyi6SVGi2clPPp+xgEhuMaHC+zGgn31Kd235W35f7Hykkaww==
   dependencies:
     asynckit "^0.4.0"
     combined-stream "^1.0.8"
@@ -6814,11 +6822,6 @@ media-typer@0.3.0:
 
 memfs@^3.1.2, memfs@^3.4.3:
   version "3.5.3"
-<<<<<<< HEAD
-  resolved "https://registry.npmjs.org/memfs/-/memfs-3.5.3.tgz"
-  integrity sha512-UERzLsxzllchadvbPs5aolHh65ISpKpM+ccLbOJ8/vvpBKmAWf+la7dXFy7Mr0ySHbdHrFv5kGFCUHHe6GFEmw==
-=======
->>>>>>> 1fa9bf29e77e1e0913152a8694f897ca65cf5308
   dependencies:
     fs-monkey "^1.0.4"
 
@@ -8010,6 +8013,11 @@ proxy-addr@~2.0.7:
   dependencies:
     forwarded "0.2.0"
     ipaddr.js "1.9.1"
+
+proxy-from-env@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.npmjs.org/proxy-from-env/-/proxy-from-env-1.1.0.tgz"
+  integrity sha512-D+zkORCbA9f1tdWRK0RaCR3GPv50cMxcrz4X8k5LTSUD1Dkw47mKJEZQNunItRTkWwgtaUSo1RVFRIG9ZXiFYg==
 
 psl@^1.1.33:
   version "1.9.0"
@@ -9812,11 +9820,6 @@ typedarray-to-buffer@^3.1.5:
 
 "typescript@^3.2.1 || ^4", "typescript@>= 2.7", "typescript@>=2.8.0 || >= 3.2.0-dev || >= 3.3.0-dev || >= 3.4.0-dev || >= 3.5.0-dev || >= 3.6.0-dev || >= 3.6.0-beta || >= 3.7.0-dev || >= 3.7.0-beta":
   version "4.9.5"
-<<<<<<< HEAD
-  resolved "https://registry.npmjs.org/typescript/-/typescript-4.9.5.tgz"
-  integrity sha512-1FXk9E2Hm+QzZQ7z+McJiHL4NW1F2EzMu9Nq9i3zAaGqibafqYwCVU6WyWAuyQRRzOlxou8xZSyXLEN8oKj24g==
-=======
->>>>>>> 1fa9bf29e77e1e0913152a8694f897ca65cf5308
 
 unbox-primitive@^1.0.2:
   version "1.0.2"
@@ -10242,32 +10245,17 @@ word-wrap@~1.2.3:
 
 workbox-background-sync@6.6.0:
   version "6.6.0"
-<<<<<<< HEAD
-  resolved "https://registry.npmjs.org/workbox-background-sync/-/workbox-background-sync-6.6.0.tgz"
-  integrity sha512-jkf4ZdgOJxC9u2vztxLuPT/UjlH7m/nWRQ/MgGL0v8BJHoZdVGJd18Kck+a0e55wGXdqyHO+4IQTk0685g4MUw==
-=======
->>>>>>> 1fa9bf29e77e1e0913152a8694f897ca65cf5308
   dependencies:
     idb "^7.0.1"
     workbox-core "6.6.0"
 
 workbox-broadcast-update@6.6.0:
   version "6.6.0"
-<<<<<<< HEAD
-  resolved "https://registry.npmjs.org/workbox-broadcast-update/-/workbox-broadcast-update-6.6.0.tgz"
-  integrity sha512-nm+v6QmrIFaB/yokJmQ/93qIJ7n72NICxIwQwe5xsZiV2aI93MGGyEyzOzDPVz5THEr5rC3FJSsO3346cId64Q==
-=======
->>>>>>> 1fa9bf29e77e1e0913152a8694f897ca65cf5308
   dependencies:
     workbox-core "6.6.0"
 
 workbox-build@6.6.0:
   version "6.6.0"
-<<<<<<< HEAD
-  resolved "https://registry.npmjs.org/workbox-build/-/workbox-build-6.6.0.tgz"
-  integrity sha512-Tjf+gBwOTuGyZwMz2Nk/B13Fuyeo0Q84W++bebbVsfr9iLkDSo6j6PST8tET9HYA58mlRXwlMGpyWO8ETJiXdQ==
-=======
->>>>>>> 1fa9bf29e77e1e0913152a8694f897ca65cf5308
   dependencies:
     "@apideck/better-ajv-errors" "^0.3.1"
     "@babel/core" "^7.11.1"
@@ -10309,40 +10297,20 @@ workbox-build@6.6.0:
 
 workbox-cacheable-response@6.6.0:
   version "6.6.0"
-<<<<<<< HEAD
-  resolved "https://registry.npmjs.org/workbox-cacheable-response/-/workbox-cacheable-response-6.6.0.tgz"
-  integrity sha512-JfhJUSQDwsF1Xv3EV1vWzSsCOZn4mQ38bWEBR3LdvOxSPgB65gAM6cS2CX8rkkKHRgiLrN7Wxoyu+TuH67kHrw==
-=======
->>>>>>> 1fa9bf29e77e1e0913152a8694f897ca65cf5308
   dependencies:
     workbox-core "6.6.0"
 
 workbox-core@6.6.0:
   version "6.6.0"
-<<<<<<< HEAD
-  resolved "https://registry.npmjs.org/workbox-core/-/workbox-core-6.6.0.tgz"
-  integrity sha512-GDtFRF7Yg3DD859PMbPAYPeJyg5gJYXuBQAC+wyrWuuXgpfoOrIQIvFRZnQ7+czTIQjIr1DhLEGFzZanAT/3bQ==
 
 workbox-expiration@6.6.0:
   version "6.6.0"
-  resolved "https://registry.npmjs.org/workbox-expiration/-/workbox-expiration-6.6.0.tgz"
-  integrity sha512-baplYXcDHbe8vAo7GYvyAmlS4f6998Jff513L4XvlzAOxcl8F620O91guoJ5EOf5qeXG4cGdNZHkkVAPouFCpw==
-=======
-
-workbox-expiration@6.6.0:
-  version "6.6.0"
->>>>>>> 1fa9bf29e77e1e0913152a8694f897ca65cf5308
   dependencies:
     idb "^7.0.1"
     workbox-core "6.6.0"
 
 workbox-google-analytics@6.6.0:
   version "6.6.0"
-<<<<<<< HEAD
-  resolved "https://registry.npmjs.org/workbox-google-analytics/-/workbox-google-analytics-6.6.0.tgz"
-  integrity sha512-p4DJa6OldXWd6M9zRl0H6vB9lkrmqYFkRQ2xEiNdBFp9U0LhsGO7hsBscVEyH9H2/3eZZt8c97NB2FD9U2NJ+Q==
-=======
->>>>>>> 1fa9bf29e77e1e0913152a8694f897ca65cf5308
   dependencies:
     workbox-background-sync "6.6.0"
     workbox-core "6.6.0"
@@ -10351,21 +10319,11 @@ workbox-google-analytics@6.6.0:
 
 workbox-navigation-preload@6.6.0:
   version "6.6.0"
-<<<<<<< HEAD
-  resolved "https://registry.npmjs.org/workbox-navigation-preload/-/workbox-navigation-preload-6.6.0.tgz"
-  integrity sha512-utNEWG+uOfXdaZmvhshrh7KzhDu/1iMHyQOV6Aqup8Mm78D286ugu5k9MFD9SzBT5TcwgwSORVvInaXWbvKz9Q==
-=======
->>>>>>> 1fa9bf29e77e1e0913152a8694f897ca65cf5308
   dependencies:
     workbox-core "6.6.0"
 
 workbox-precaching@6.6.0:
   version "6.6.0"
-<<<<<<< HEAD
-  resolved "https://registry.npmjs.org/workbox-precaching/-/workbox-precaching-6.6.0.tgz"
-  integrity sha512-eYu/7MqtRZN1IDttl/UQcSZFkHP7dnvr/X3Vn6Iw6OsPMruQHiVjjomDFCNtd8k2RdjLs0xiz9nq+t3YVBcWPw==
-=======
->>>>>>> 1fa9bf29e77e1e0913152a8694f897ca65cf5308
   dependencies:
     workbox-core "6.6.0"
     workbox-routing "6.6.0"
@@ -10373,21 +10331,11 @@ workbox-precaching@6.6.0:
 
 workbox-range-requests@6.6.0:
   version "6.6.0"
-<<<<<<< HEAD
-  resolved "https://registry.npmjs.org/workbox-range-requests/-/workbox-range-requests-6.6.0.tgz"
-  integrity sha512-V3aICz5fLGq5DpSYEU8LxeXvsT//mRWzKrfBOIxzIdQnV/Wj7R+LyJVTczi4CQ4NwKhAaBVaSujI1cEjXW+hTw==
-=======
->>>>>>> 1fa9bf29e77e1e0913152a8694f897ca65cf5308
   dependencies:
     workbox-core "6.6.0"
 
 workbox-recipes@6.6.0:
   version "6.6.0"
-<<<<<<< HEAD
-  resolved "https://registry.npmjs.org/workbox-recipes/-/workbox-recipes-6.6.0.tgz"
-  integrity sha512-TFi3kTgYw73t5tg73yPVqQC8QQjxJSeqjXRO4ouE/CeypmP2O/xqmB/ZFBBQazLTPxILUQ0b8aeh0IuxVn9a6A==
-=======
->>>>>>> 1fa9bf29e77e1e0913152a8694f897ca65cf5308
   dependencies:
     workbox-cacheable-response "6.6.0"
     workbox-core "6.6.0"
@@ -10398,50 +10346,25 @@ workbox-recipes@6.6.0:
 
 workbox-routing@6.6.0:
   version "6.6.0"
-<<<<<<< HEAD
-  resolved "https://registry.npmjs.org/workbox-routing/-/workbox-routing-6.6.0.tgz"
-  integrity sha512-x8gdN7VDBiLC03izAZRfU+WKUXJnbqt6PG9Uh0XuPRzJPpZGLKce/FkOX95dWHRpOHWLEq8RXzjW0O+POSkKvw==
-=======
->>>>>>> 1fa9bf29e77e1e0913152a8694f897ca65cf5308
   dependencies:
     workbox-core "6.6.0"
 
 workbox-strategies@6.6.0:
   version "6.6.0"
-<<<<<<< HEAD
-  resolved "https://registry.npmjs.org/workbox-strategies/-/workbox-strategies-6.6.0.tgz"
-  integrity sha512-eC07XGuINAKUWDnZeIPdRdVja4JQtTuc35TZ8SwMb1ztjp7Ddq2CJ4yqLvWzFWGlYI7CG/YGqaETntTxBGdKgQ==
-=======
->>>>>>> 1fa9bf29e77e1e0913152a8694f897ca65cf5308
   dependencies:
     workbox-core "6.6.0"
 
 workbox-streams@6.6.0:
   version "6.6.0"
-<<<<<<< HEAD
-  resolved "https://registry.npmjs.org/workbox-streams/-/workbox-streams-6.6.0.tgz"
-  integrity sha512-rfMJLVvwuED09CnH1RnIep7L9+mj4ufkTyDPVaXPKlhi9+0czCu+SJggWCIFbPpJaAZmp2iyVGLqS3RUmY3fxg==
-=======
->>>>>>> 1fa9bf29e77e1e0913152a8694f897ca65cf5308
   dependencies:
     workbox-core "6.6.0"
     workbox-routing "6.6.0"
 
 workbox-sw@6.6.0:
   version "6.6.0"
-<<<<<<< HEAD
-  resolved "https://registry.npmjs.org/workbox-sw/-/workbox-sw-6.6.0.tgz"
-  integrity sha512-R2IkwDokbtHUE4Kus8pKO5+VkPHD2oqTgl+XJwh4zbF1HyjAbgNmK/FneZHVU7p03XUt9ICfuGDYISWG9qV/CQ==
 
 workbox-webpack-plugin@^6.4.1:
   version "6.6.0"
-  resolved "https://registry.npmjs.org/workbox-webpack-plugin/-/workbox-webpack-plugin-6.6.0.tgz"
-  integrity sha512-xNZIZHalboZU66Wa7x1YkjIqEy1gTR+zPM+kjrYJzqN7iurYZBctBLISyScjhkJKYuRrZUP0iqViZTh8rS0+3A==
-=======
-
-workbox-webpack-plugin@^6.4.1:
-  version "6.6.0"
->>>>>>> 1fa9bf29e77e1e0913152a8694f897ca65cf5308
   dependencies:
     fast-json-stable-stringify "^2.1.0"
     pretty-bytes "^5.4.1"
@@ -10451,11 +10374,6 @@ workbox-webpack-plugin@^6.4.1:
 
 workbox-window@6.6.0:
   version "6.6.0"
-<<<<<<< HEAD
-  resolved "https://registry.npmjs.org/workbox-window/-/workbox-window-6.6.0.tgz"
-  integrity sha512-L4N9+vka17d16geaJXXRjENLFldvkWy7JyGxElRD0JvBxvFEd8LOhr+uXCcar/NzAmIBRv9EZ+M+Qr4mOoBITw==
-=======
->>>>>>> 1fa9bf29e77e1e0913152a8694f897ca65cf5308
   dependencies:
     "@types/trusted-types" "^2.0.2"
     workbox-core "6.6.0"

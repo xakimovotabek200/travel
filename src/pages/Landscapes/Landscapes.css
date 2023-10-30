@@ -1,6 +1,11 @@
 .top {
     display: flex;
     justify-content: space-between;
+    width: 70%;
+}
+
+.img-1 img {
+    width: 50%;
 }
 
 .top h1 {
@@ -28,6 +33,18 @@
     height: 677px;
     flex-shrink: 0;
     background: #EDEDED;
+}
+
+
+.span-3 {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.span-4 {
+    display: flex;
+    align-items: center;
 }
 
 .texts-1 {
@@ -70,9 +87,17 @@
     display: flex;
     align-items: center;
 }
-.texts-3{
-    margin-top: 20px;
+
+.texts-3 {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
 }
+
+.texts-4 {
+    float: center;
+}
+
 .text-4 {
     margin-left: 20px;
     color: #5E6282;
@@ -84,13 +109,13 @@
 }
 
 .text-5 {
-    color: var(--black, #000);
+    margin-top: 30px;
+    color: #000;
     font-family: Poppins;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 26px;
-    /* 162.5% */
 }
 
 .text-6 {
@@ -178,4 +203,9 @@ textarea {
     width: 259px;
     height: 56px;
     flex-shrink: 0;
+}
+
+.spans-2 {
+    display: flex;
+    margin-top: 30px;
 }
