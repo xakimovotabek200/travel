@@ -17,6 +17,7 @@ import planeImage from './img/image 872.png'
 import hawaii from './img/Rectangle 17 (1).png'
 import product1 from './img/Rectangle 19305.png'
 import logo1 from './img/Ellipse 623.svg'
+import gameOver from './gameOver'
 
 import person from './img/ooui_user-avatar-outline.svg'
 
@@ -200,6 +201,7 @@ function home() {
           </div>
         </div>
       </div>
+      <gameOver />
     </div>
   )
 }
