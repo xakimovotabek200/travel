@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import axios from "axios";
-import "./Landscapes.css";
+import { Input, Button } from "antd";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
-import { Input } from "antd"; // Replace with your UI library
-const { TextArea } = Input;
+import "./Landscapes.css";
 
 function Ajax() {
   const [namee, setName] = useState("");
@@ -15,6 +16,22 @@ function Ajax() {
   const [message, setMessage] = useState("");
 
   const handleSubmit = async () => {
+    if (
+      !namee ||
+      !email ||
+      !confirm ||
+      !phone ||
+      !data ||
+      !ticket ||
+      !message
+    ) {
+      toast.error("Please fill in all required fields.", {
+        autoClose: 5000,
+        position: "top-right",
+      });
+      return;
+    }
+
     const chatId = "1999683671"; // Telegram chat ID
     const botToken = "6635249356:AAGS3Claiav2N1a1SBDmj15HCSeCbaRFZQI"; // Your bot token
 
@@ -43,8 +60,26 @@ function Ajax() {
         messageText
       )}`;
       await axios.get(url);
+
+      toast.success("Message sent successfully!", {
+        autoClose: 5000,
+        position: "top-right",
+      });
+
+      // Clear the input fields after a successful submission
+      setName("");
+      setEmail("");
+      setConfirm("");
+      setPhone("");
+      setData("");
+      setTicket("");
+      setMessage("");
     } catch (error) {
-      console.error("Error sending the messages: ", error);
+      console.error("Error sending the message: ", error);
+      toast.error("Error sending the message.", {
+        autoClose: 3000,
+        position: "top-right",
+      });
     }
   };
 
@@ -52,56 +87,64 @@ function Ajax() {
     <div className="top-buttom-right-message1">
       <Input
         placeholder="Name"
-        id="namee"
         value={namee}
         onChange={(e) => setName(e.target.value)}
       />
       <Input
         placeholder="Email"
-        id="email"
         value={email}
         onChange={(e) => setEmail(e.target.value)}
       />
       <Input
         placeholder="Confirm-Email"
-        id="confirm"
         value={confirm}
         onChange={(e) => setConfirm(e.target.value)}
       />
       <Input
         type="number"
         placeholder="Phone"
-        id="number"
         value={phone}
         onChange={(e) => setPhone(e.target.value)}
       />
       <Input
         type="month"
         placeholder="dd-mm-yy"
-        id="data"
         value={data}
         onChange={(e) => setData(e.target.value)}
       />
       <Input
         type="number"
         placeholder="Number of ticket"
-        id="ticket"
         value={ticket}
         onChange={(e) => setTicket(e.target.value)}
       />
-      <TextArea
+      <Input.TextArea
         placeholder="Message"
-        id="message"
         value={message}
         onChange={(e) => setMessage(e.target.value)}
         style={{ width: "260px", height: "56px" }}
       />
       <div className="buttons-1">
-        <button className="button-1" onClick={handleSubmit}>
-          Check Availability
-        </button>
-        <button className="button-1">Book Now</button>
+        <Button className="button-1" type="primary" onClick={handleSubmit}>
+          Check Availability{" "}
+        </Button>
+        <Button className="button-1" type="primary">
+          Book Now
+        </Button>
       </div>
+      <ToastContainer
+        position="top-right"
+        autoClose={3000}
+        limit={8}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+      />
     </div>
   );
 }

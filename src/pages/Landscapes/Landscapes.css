@@ -7,7 +7,7 @@
     align-items: center;
 }
 
-.asosiy {   
+.asosiy {
     border-radius: 20px;
     padding: 10px;
     display: flex;
@@ -79,10 +79,6 @@
 }
 
 
-.button-1 {
-    margin: 5px;
-}
-
 .span-3 {
     margin-top: 30px;
     display: flex;
@@ -149,7 +145,6 @@
 
 .text-4 {
     margin-left: 20px;
-    margin-top: 18px;
     color: #5E6282;
     font-family: Poppins;
     font-size: 16px;
@@ -259,6 +254,7 @@
 }
 
 .button-1 {
+    margin: 5px;
     width: 220px;
     display: inline-flex;
     padding: 16px 46.561px 15.416px 47px;
@@ -274,6 +270,14 @@
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+    transition: 0.3s ease;
+    cursor: pointer;
+
+}
+
+.button-1:hover {
+    background: white;
+    color: #DF6951;
 }
 
 .top-buttom-right-message input {
