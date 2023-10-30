@@ -70,7 +70,7 @@ const About = () => {
               praesentium a laudantium. Et labore harum non nobis ipsum eum
               molestias mollitia et corporis praesentium a laudantium.
             </h6>
-            <div className="imgs">
+            <div className="imgss">
               <img src={Group} alt="" />
               <img src={Group} alt="" />
               <img src={Group} alt="" />
