@@ -1,19 +1,16 @@
-import React from "react";
-import "./App.css";
-import TravelExhibition from "./components/sodiqjon_exhibition/header_sodiqjon";
-// import Landscapes from "./pages/Landscapes/Landscapes";
-// import About from "./pages/about/About";
-import { Index } from "./pages/itravel/end";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./Home/home";
+import About from "./pages/about/About";
+import HomeRoutes from "./components/HomeRouters/HomeRoutes";
+
 function App() {
   return (
-    <div>
-      <Index />
-      {/* <Landscapes /> */}
-      <TravelExhibition />
-      {/* <About /> */}
-      {/* <About /> */}
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
-
-export default App;
+export default App
