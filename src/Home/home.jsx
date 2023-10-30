@@ -17,6 +17,7 @@ import planeImage from './img/image 872.png'
 import hawaii from './img/Rectangle 17 (1).png'
 import product1 from './img/Rectangle 19305.png'
 import logo1 from './img/Ellipse 623.svg'
+import profile from './img/Ellipse 624.svg'
 
 import person from './img/ooui_user-avatar-outline.svg'
 
@@ -24,16 +25,7 @@ function home() {
   return (
     <div className='allofthem'>
       <div className='landing'>
-        <div className='navbar'>
-          <h1>Travel</h1>
-          <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">Home</a></li>
-            <li><a href="">Home</a></li>
-            <li><a href="">Home</a></li>
-          </ul>
-          <button className='redbutton'>Get in touch</button>
-        </div>
+        
         <div className="main_text">
           <h1>No matter where <br />  you’re going to, we’ll <br /> take you there</h1>
           <div className="request">
@@ -198,6 +190,15 @@ function home() {
 
 
           </div>
+        </div>
+      </div>
+      <div className="testimonals">
+        <h5>PROMOTION</h5>
+        <h1>See What Our Clients Say <br /> About Us</h1>
+        <img className='profil_icon' src={profile} alt="" />
+        <div className="review_card">
+          <h4>Vel officiis dolor ea illo aut eligendi ullam non laudantium magnam et recusandae molestiae sit iure unde aut voluptate quaerat. Id sunt provident quo possimus impedit vel doloremque obcaecati qui ullam consectetur et ipsum omnis.</h4>
+          <h2>Christine Beckam - Designer</h2>
         </div>
       </div>
     </div>

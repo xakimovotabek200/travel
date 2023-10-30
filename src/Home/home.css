@@ -281,3 +281,23 @@ div.services {
 .people {
   display: flex;
 }
+.testimonals {
+  background-color: gainsboro;
+  display: flex;
+  flex-direction: column;
+}
+.testimonals h5 {
+  color: #DF6951;
+  text-align: center;
+  padding: 1rem;
+}
+.testimonals h1 {
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.testimonals img {
+  width: 200px;
+}
+.review-card {
+  width: 200px`;
+}

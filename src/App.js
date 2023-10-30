@@ -7,6 +7,8 @@ import { Index } from "./pages/itravel/end";
 function App() {
   return (
     <div>
+      <Navbar />
+      <Home />
       <Index />
       {/* <Landscapes /> */}
       <TravelExhibition />
