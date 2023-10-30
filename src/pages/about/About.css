@@ -1,0 +1,141 @@
+.borders {
+    background: #fff;
+    display: flex;
+    margin: 40px;
+    justify-content: space-around;
+    margin-top: 1700px;
+}
+
+.border_text {
+    margin-top: 80px;
+}
+
+.border_text>h4 {
+    color: #DF6951;
+    font-size: 18px;
+
+}
+
+.border_text>h1 {
+    width: 500px;
+    margin-top: 15px;
+    color: #181E4B;
+    font-size: 35px;
+}
+
+.border_text>p {
+    color: #000000;
+    width: 500px;
+    margin-top: 15px;
+}
+
+.btn {
+    background: #DF6951;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 15px;
+    padding: 12px 30px;
+}
+
+.elli {
+    position: relative;
+}
+
+.elis {
+    position: absolute;
+    margin-left: -585px;
+    margin-top: 30px;
+}
+
+.Opacha {
+    background-image: url("../../img/Rectangle19353.png");
+    object-fit: contain;
+    background-repeat: no-repeat;
+    height: 600px;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    padding-top: 180px;
+}
+
+.text>h1 {
+    color: #fff;
+    position: relative;
+    font-weight: 100;
+    font-size: 120px;
+}
+
+svg {
+    position: absolute;
+    margin-left: -30px;
+    margin-top: -110px;
+    width: 80px;
+}
+
+.bottom {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+}
+
+.dur {
+    margin-top: 200px;
+    position: relative;
+    margin-right: 200px;
+}
+
+.dur>p {
+    margin-top: 20px;
+    color: #DF6951;
+    font-size: 18px;
+}
+
+.dur>h1 {
+    margin-top: 20px;
+    color: #181E4B;
+    font-size: 35px;
+}
+
+.dur>h6 {
+    margin-top: 20px;
+    color: #000000;
+    width: 500px;
+    font-size: 18px;
+}
+
+.flexx{
+    position: absolute;
+    margin-top: -600px;
+    margin-left: 400px;
+}
+
+.imgss {
+    margin-top: 20px;
+    gap: 35px;
+    display: flex;
+}
+.head{
+    text-align: center;
+    align-content: center;
+    margin-top: 20px;
+}
+.head > p{
+    color: #DF6951;
+
+}
+.head > h1{
+    margin-top: 5px;
+    color: #181E4B;
+}
+.grid {
+    margin-top: 50px;
+ display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+.grid > img{
+    object-fit: cover;
+}
