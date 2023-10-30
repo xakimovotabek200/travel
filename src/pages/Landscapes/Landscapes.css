@@ -1,8 +1,21 @@
-.main {
+.asosiy-div {
+    padding: 20px;
+    border: 1px solid forestgreen;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
+}
+
+.asosiy {   
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 80%;
 }
 
 .top {
@@ -23,14 +36,14 @@
     margin: 5px;
 }
 
-/* .top h1 {
+.top h1 {
     color: #343434;
     font-size: 20px;
 }
 
 .top .i {
     width: 26px;
-} */
+}
 
 .top-buttom {
     display: flex;
@@ -201,7 +214,7 @@
 }
 
 .texts-7 {
-    margin-top: 50px;
+    margin-top: 70px;
 }
 
 .text-7 {

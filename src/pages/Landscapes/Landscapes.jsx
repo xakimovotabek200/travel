@@ -18,8 +18,8 @@ import Ajax from "./ajax";
 
 function Landscapes() {
   return (
-    <>
-      <div className="main">
+    <div className="asosiy-div">
+      <div className="asosiy">
         {/* <div className="top">
           <h1>
             <GrCircleInformation className="i" /> Information
@@ -128,7 +128,8 @@ function Landscapes() {
                   <h1 className="text-6">Included</h1>
                 </div>
                 <div className="spans-3">
-                  <div>imgs
+                  <div>
+                    imgs
                     <span className="span-2">
                       <TiTickOutline />5 star Accomodations
                     </span>{" "}
@@ -189,7 +190,7 @@ function Landscapes() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
