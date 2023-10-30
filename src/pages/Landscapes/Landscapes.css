@@ -1,3 +1,10 @@
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
 .top {
     display: flex;
     justify-content: space-between;
@@ -5,17 +12,25 @@
 }
 
 .img-1 img {
-    width: 50%;
+    width: 70%;
 }
 
-.top h1 {
+.imgs {
+    display: flex;
+}
+
+.imgs img {
+    margin: 5px;
+}
+
+/* .top h1 {
     color: #343434;
     font-size: 20px;
 }
 
 .top .i {
     width: 26px;
-}
+} */
 
 .top-buttom {
     display: flex;
@@ -26,15 +41,34 @@
     width: 50%;
 }
 
+.top-buttom-right {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.top-buttom-right-message input {
+    margin: 3px;
+}
+
 .top-buttom-right-message {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
     padding-left: 30px;
     padding-right: 30px;
     width: 350px;
-    height: 677px;
+    height: 683px;
     flex-shrink: 0;
     background: #EDEDED;
 }
 
+
+.button-1 {
+    margin: 5px;
+}
 
 .span-3 {
     margin-top: 30px;
@@ -85,21 +119,24 @@
 
 .texts-2 {
     display: flex;
+    justify-content: left;
+    text-align: center;
     align-items: center;
 }
 
 .texts-3 {
-    margin-top: 30px;
+    margin-top: 24px;
     display: flex;
     align-items: center;
 }
 
 .texts-4 {
-    float: center;
+    margin-left: 30px;
 }
 
 .text-4 {
     margin-left: 20px;
+    margin-top: 18px;
     color: #5E6282;
     font-family: Poppins;
     font-size: 16px;
@@ -130,6 +167,7 @@
 }
 
 .span-2 {
+    margin-left: 10px;
     color: var(--black, #000);
     font-family: Poppins;
     font-size: 16px;
@@ -137,6 +175,33 @@
     font-weight: 400;
     line-height: 26px;
     /* 162.5% */
+}
+
+.spans-2 {
+    display: flex;
+    color: var(--black, #000);
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+#spans-3,
+#spans-2 {
+    margin-top: 25px;
+}
+
+#spans-3 .span-2 {
+    margin-left: 20px;
+}
+
+#spans-2 .span-2 {
+    margin-left: 20px;
+}
+
+.texts-7 {
+    margin-top: 50px;
 }
 
 .text-7 {
@@ -198,14 +263,7 @@
     line-height: normal;
 }
 
-.inputs-1 input,
-textarea {
+.top-buttom-right-message input {
     width: 259px;
-    height: 56px;
-    flex-shrink: 0;
-}
-
-.spans-2 {
-    display: flex;
-    margin-top: 30px;
+    height: 50px;
 }

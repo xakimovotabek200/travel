@@ -6,6 +6,7 @@ import { Input } from "antd"; // Replace with your UI library
 const { TextArea } = Input;
 
 function Ajax() {
+  const [namee, setName] = useState("");
   const [email, setEmail] = useState("");
   const [confirm, setConfirm] = useState("");
   const [phone, setPhone] = useState("");
@@ -18,15 +19,17 @@ function Ajax() {
     const botToken = "6635249356:AAGS3Claiav2N1a1SBDmj15HCSeCbaRFZQI"; // Your bot token
 
     // Barcha ma'lumotlarni alohida o'zgaruvchilarda saqlash
-    const emailMessage = `Email: ${email}`;
-    const confirmMessage = `Confirm: ${confirm}`;
-    const phoneMessage = `Phone: ${phone}`;
-    const dataMessage = `DD-MM-YY: ${data}`;
-    const ticketMessage = `Ticket: ${ticket}`;
-    const userMessage = `Message: ${message}`;
+    const nameMessage = `Name👉: ${namee}👈`;
+    const emailMessage = `Email👉: ${email}👈`;
+    const confirmMessage = `Confirm👉: ${confirm}👈`;
+    const phoneMessage = `Phone👉: ${phone}👈`;
+    const dataMessage = `DD-MM-YY👉: ${data}👈`;
+    const ticketMessage = `Ticket👉: ${ticket}👈`;
+    const userMessage = `Message👉: ${message}👈`;
 
     // Barcha ma'lumotlarni bir xabarda yuborish uchun yaratilgan obyektni tuzish
     const messageText = `
+    ${nameMessage}
     ${emailMessage}
     ${confirmMessage}
     ${phoneMessage}
@@ -46,8 +49,13 @@ function Ajax() {
   };
 
   return (
-    <div>
-      <Input placeholder="Name" id="name" />
+    <div className="top-buttom-right-message1">
+      <Input
+        placeholder="Name"
+        id="namee"
+        value={namee}
+        onChange={(e) => setName(e.target.value)}
+      />
       <Input
         placeholder="Email"
         id="email"
@@ -86,7 +94,7 @@ function Ajax() {
         id="message"
         value={message}
         onChange={(e) => setMessage(e.target.value)}
-        style={{ width: "300px", height: "56px" }}
+        style={{ width: "260px", height: "56px" }}
       />
       <div className="buttons-1">
         <button className="button-1" onClick={handleSubmit}>

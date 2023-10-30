@@ -1,7 +1,7 @@
 import "./Landscapes.css";
 import React from "react";
 import { Rate } from "antd";
-import { GrCircleInformation} from "react-icons/gr";
+import { GrCircleInformation } from "react-icons/gr";
 import { GrPlan } from "react-icons/gr";
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import { TfiGallery } from "react-icons/tfi";
@@ -19,8 +19,8 @@ import Ajax from "./ajax";
 function Landscapes() {
   return (
     <>
-      <div>
-        <div className="top">
+      <div className="main">
+        {/* <div className="top">
           <h1>
             <GrCircleInformation className="i" /> Information
           </h1>
@@ -36,7 +36,7 @@ function Landscapes() {
             <TfiGallery className="i" />
             Gallery
           </h1>
-        </div>
+        </div> */}
         <div className="top-buttom">
           <div className="top-buttom-left">
             <div className="texts-1">
@@ -72,7 +72,7 @@ function Landscapes() {
                   <h1 className="text-6">Destination</h1>{" "}
                 </div>
                 <div className="texts-4">
-                  <span className="span-2">: Zurich, Switzerland</span>
+                  <span className="spans-2">: Zurich, Switzerland</span>
                 </div>{" "}
               </div>
               <div className="texts-3">
@@ -80,7 +80,7 @@ function Landscapes() {
                   <h1 className="text-6">Departure</h1>{" "}
                 </div>
                 <div className="texts-4">
-                  <span className="span-2">: Main Sqaure, New City</span>
+                  <span className="spans-2">: Main Sqaure, New City</span>
                 </div>{" "}
               </div>{" "}
               <div className="texts-3">
@@ -88,7 +88,7 @@ function Landscapes() {
                   <h1 className="text-6">Departure Time</h1>
                 </div>
                 <div className="texts-4">
-                  <span className="span-2">: Approximately 08 : 10 AM</span>
+                  <span className="spans-2">: Approximately 08 : 10 AM</span>
                 </div>{" "}
               </div>
               <div className="texts-3">
@@ -96,36 +96,39 @@ function Landscapes() {
                   <h1 className="text-6">Return Time</h1>{" "}
                 </div>
                 <div className="texts-4">
-                  <span className="span-2">: Approximately 07 : 20 PM</span>
+                  <span className="spans-2">: Approximately 07 : 20 PM</span>
                 </div>{" "}
               </div>
               <div className="texts-3">
                 <div>
                   <h1 className="text-6">Dress Code</h1>
                 </div>
-                <div>
-                  <span className="span-2">
+                <div className="texts-4">
+                  <span className="spans-2">
                     : Casual, comfortable and light
                   </span>
                 </div>{" "}
               </div>
-              <div className="spans-2">
+              <div className="spans-2" id="spans-2">
                 <div>
                   <h1 className="text-6">Not Included</h1>
                 </div>
                 <div>
                   <span className="span-2">
                     <AiOutlineCloseCircle />
-                    Gallery Ticket <AiOutlineCloseCircle /> Lunch
+                    Gallery Ticket
+                  </span>
+                  <span className="span-2">
+                    <AiOutlineCloseCircle /> Lunch
                   </span>
                 </div>
               </div>{" "}
-              <div className="spans-2">
+              <div className="spans-2" id="spans-3">
                 <div>
                   <h1 className="text-6">Included</h1>
                 </div>
                 <div className="spans-3">
-                  <div>
+                  <div>imgs
                     <span className="span-2">
                       <TiTickOutline />5 star Accomodations
                     </span>{" "}
@@ -144,7 +147,7 @@ function Landscapes() {
                 </div>
               </div>
             </div>
-            <div>
+            <div className="texts-7">
               <h1 className="text-7">From our gallery</h1>
               <p className="text-8">
                 Ex optio sequi et quos praesentium in nostrum labore nam rerum
@@ -153,10 +156,19 @@ function Landscapes() {
                 voluptatem aut libero nisi.{" "}
               </p>
             </div>
-            <div className="img">
-              <img src={img2} alt="1" /> <img src={img3} alt="2" />{" "}
-              <img src={img4} alt="3" /> <img src={img5} alt="4" />{" "}
-              <img src={img6} alt="5" /> <img src={img7} alt="6" />
+            <div className="imgs">
+              <div>
+                {" "}
+                <img src={img2} alt="1" /> <img src={img3} alt="2" />{" "}
+              </div>
+              <div>
+                {" "}
+                <img src={img4} alt="3" /> <img src={img5} alt="4" />{" "}
+              </div>
+              <div>
+                {" "}
+                <img src={img6} alt="5" /> <img src={img7} alt="6" />
+              </div>
             </div>
           </div>
           <div className="top-buttom-right">
