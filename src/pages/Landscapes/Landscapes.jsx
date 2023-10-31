@@ -1,11 +1,10 @@
+import React, { useState } from "react";
 import "./Landscapes.css";
-import React from "react";
 import { Rate } from "antd";
-import { Input } from "antd";
-import { GrCircleInformation } from "react-icons/gr";
-import { GrPlan } from "react-icons/gr";
-import { HiOutlineLocationMarker } from "react-icons/hi";
-import { TfiGallery } from "react-icons/tfi";
+// import { GrCircleInformation } from "react-icons/gr";
+// import { GrPlan } from "react-icons/gr";
+// import { HiOutlineLocationMarker } from "react-icons/hi";
+// import { TfiGallery } from "react-icons/tfi";
 import { AiOutlineCloseCircle } from "react-icons/ai";
 import { TiTickOutline } from "react-icons/ti";
 import img1 from "../../img/Landscapes/273 1.png";
@@ -15,17 +14,26 @@ import img4 from "../../img/Landscapes/4.png";
 import img5 from "../../img/Landscapes/5.png";
 import img6 from "../../img/Landscapes/6.png";
 import img7 from "../../img/Landscapes/7.png";
+import Ajax from "./ajax";
 
 function Landscapes() {
-  const { TextArea } = Input;
-  const onChange = (e) => {
-    console.log(e);
+  const [reviewCount, setReviewCount] = useState(0);
+  const [currentRating, setCurrentRating] = useState(0);
+  const handleRateChange = (newRating) => {
+    if (newRating === currentRating) {
+      // If the user clicks the same rating again, reset it
+      setCurrentRating(0);
+      setReviewCount(reviewCount - newRating);
+    } else {
+      // Update the review count with the new rating
+      setReviewCount(reviewCount - currentRating + newRating);
+      setCurrentRating(newRating);
+    }
   };
   return (
-    <>
-      <div>
-        {" "}
-        <div className="top">
+    <div className="asosiy-div">
+      <div className="asosiy">
+        {/* <div className="top">
           <h1>
             <GrCircleInformation className="i" /> Information
           </h1>
@@ -41,19 +49,22 @@ function Landscapes() {
             <TfiGallery className="i" />
             Gallery
           </h1>
-        </div>
+        </div> */}
         <div className="top-buttom">
           <div className="top-buttom-left">
-            {" "}
             <div className="texts-1">
               <h1 className="text-1">Switzerland</h1>
               <h1 className="text-2">1,000 $</h1>
               <span className="span-1"> / </span>
               <h1 className="text-3">Per Couple</h1>
             </div>
-            <div>
-              <Rate />
-              <h1 className="text-4">(2.3k review)</h1>
+            <div className="texts-2">
+              <Rate
+                allowHalf
+                onChange={handleRateChange}
+                value={currentRating}
+              />
+              <h1 className="text-4">({reviewCount} review)</h1>
             </div>
             <div>
               <h1 className="text-5">
@@ -73,73 +84,88 @@ function Landscapes() {
               </h1>
             </div>
             <div>
-              <div>
-                {" "}
-                <h1 className="text-6">Destination</h1>{" "}
-                <span className="span-2">: Zurich, Switzerland</span>
+              <div className="texts-3">
+                <div>
+                  <h1 className="text-6">Destination</h1>{" "}
+                </div>
+                <div className="texts-4">
+                  <span className="spans-2">: Zurich, Switzerland</span>
+                </div>{" "}
               </div>
-              <div>
-                {" "}
-                <h1 className="text-6">Departure</h1>{" "}
-                <span className="span-2">: Main Sqaure, New City</span>
+              <div className="texts-3">
+                <div>
+                  <h1 className="text-6">Departure</h1>{" "}
+                </div>
+                <div className="texts-4">
+                  <span className="spans-2">: Main Sqaure, New City</span>
+                </div>{" "}
               </div>{" "}
-              <div>
-                {" "}
-                <h1 className="text-6">Departure Time</h1>
-                <span className="span-2">: Approximately 08 : 10 AM</span>
+              <div className="texts-3">
+                <div>
+                  <h1 className="text-6">Departure Time</h1>
+                </div>
+                <div className="texts-4">
+                  <span className="spans-2">: Approximately 08 : 10 AM</span>
+                </div>{" "}
               </div>
-              <div>
-                {" "}
-                <h1 className="text-6">Return Time</h1>{" "}
-                <span className="span-2">: Approximately 07 : 20 PM</span>
+              <div className="texts-3">
+                <div>
+                  <h1 className="text-6">Return Time</h1>{" "}
+                </div>
+                <div className="texts-4">
+                  <span className="spans-2">: Approximately 07 : 20 PM</span>
+                </div>{" "}
               </div>
-              <div>
-                {" "}
-                <h1 className="text-6">Dress Code</h1>
-                <span className="span-2">: Casual, comfortable and light</span>
+              <div className="texts-3">
+                <div>
+                  <h1 className="text-6">Dress Code</h1>
+                </div>
+                <div className="texts-4">
+                  <span className="spans-2">
+                    : Casual, comfortable and light
+                  </span>
+                </div>{" "}
               </div>
-              <div>
-                {" "}
+              <div className="spans-2" id="spans-2">
                 <div>
                   <h1 className="text-6">Not Included</h1>
                 </div>
                 <div>
                   <span className="span-2">
-                    {" "}
                     <AiOutlineCloseCircle />
-                    Gallery Ticket{" "}
-                  </span>{" "}
-                  <span>
-                    {" "}
+                    Gallery Ticket
+                  </span>
+                  <span className="span-2">
                     <AiOutlineCloseCircle /> Lunch
                   </span>
                 </div>
               </div>{" "}
-              <div>
-                {" "}
+              <div className="spans-2" id="spans-3">
                 <div>
                   <h1 className="text-6">Included</h1>
                 </div>
-                <div>
-                  <span className="span-2">
-                    {" "}
-                    <TiTickOutline />5 star Accomodations
-                  </span>{" "}
-                  <span className="span-2">
-                    <TiTickOutline /> Airport Transfer
-                  </span>{" "}
-                  <span className="span-2">
-                    {" "}
-                    <TiTickOutline /> Breakfast
-                  </span>{" "}
-                  <span className="span-2">
-                    {" "}
-                    <TiTickOutline /> Personal Guide
-                  </span>
+                <div className="spans-3">
+                  <div>
+                    imgs
+                    <span className="span-2">
+                      <TiTickOutline />5 star Accomodations
+                    </span>{" "}
+                    <span className="span-2">
+                      <TiTickOutline /> Airport Transfer
+                    </span>{" "}
+                  </div>
+                  <div>
+                    <span className="span-2">
+                      <TiTickOutline /> Breakfast
+                    </span>{" "}
+                    <span className="span-2">
+                      <TiTickOutline /> Personal Guide
+                    </span>
+                  </div>
                 </div>
               </div>
             </div>
-            <div>
+            <div className="texts-7">
               <h1 className="text-7">From our gallery</h1>
               <p className="text-8">
                 Ex optio sequi et quos praesentium in nostrum labore nam rerum
@@ -148,16 +174,24 @@ function Landscapes() {
                 voluptatem aut libero nisi.{" "}
               </p>
             </div>
-            <div className="img">
-              <img src={img2} alt="1" /> <img src={img3} alt="2" />{" "}
-              <img src={img4} alt="3" /> <img src={img5} alt="4" />{" "}
-              <img src={img6} alt="5" /> <img src={img7} alt="6" />
+            <div className="imgs">
+              <div>
+                {" "}
+                <img src={img2} alt="1" /> <img src={img3} alt="2" />{" "}
+              </div>
+              <div>
+                {" "}
+                <img src={img4} alt="3" /> <img src={img5} alt="4" />{" "}
+              </div>
+              <div>
+                {" "}
+                <img src={img6} alt="5" /> <img src={img7} alt="6" />
+              </div>
             </div>
           </div>
           <div className="top-buttom-right">
             <div className="top-buttom-right-message">
               <div>
-                {" "}
                 <h1 className="text-9">Book This Tour </h1>
                 <p className="text-10">
                   Ex optio sequi et quos praesentium in nostrum labore nam rerum
@@ -165,37 +199,15 @@ function Landscapes() {
                   dolo.
                 </p>
               </div>
-              <div className="inputs-1">
-                <Input placeholder=" Name" onChange={onChange} />{" "}
-                <Input placeholder="Email" onChange={onChange} />{" "}
-                <Input placeholder="Confirm Email" onChange={onChange} />{" "}
-                <Input type="number" placeholder="Phone" onChange={onChange} />{" "}
-                <Input
-                  type="month"
-                  placeholder="dd-mm-yy"
-                  onChange={onChange}
-                />{" "}
-                <Input
-                  type="number"
-                  placeholder="Number of ticket"
-                  onChange={onChange}
-                />{" "}
-                <TextArea
-                  placeholder="Message"
-                  onChange={onChange}
-                  style={{ width: "281px", height: "56px" }}
-                />
-                <button className="button-1">Check Availability</button>
-                <button className="button-1">Book Now</button>
-              </div>
+              <Ajax />
             </div>
-            <div>
+            <div className="img-1">
               <img src={img1} alt="7" />
             </div>
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;0,800;1,300&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.landing {
+  background-image: url(./img/Rectangle\ 19290.png);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+}
+
+.navbar {
+  display: flex;
+  padding: 1.5rem 2rem;
+  justify-content: space-between;
+
+}
+
+.navbar h1 {
+  color: white;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+}
+
+ul li a {
+  color: white;
+
+  text-decoration: none;
+}
+
+ul li {
+  margin-left: 1rem
+}
+
+.navbar button {
+  background-color: #DF6951;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 0.4rem 0.9rem;
+  transition: 0.5s ease;
+}
+
+.navbar button:hover {
+  transform: scale(1.2)
+}
+
+/*TExtlar*/
+.main_text {
+  color: white;
+  padding: 4rem 4rem;
+}
+
+.main_text h1 {
+  font-size: 2.5rem;
+}
+
+/*savollar request card yana birbalo*/
+.request {
+  display: flex;
+  width: 600px;
+  align-items: center;
+  height: 80px;
+  background-color: rgba(255, 255, 255, 0.242);
+  border-radius: 10px;
+}
+
+.request h2 {
+  font-size: 1.5rem;
+}
+
+.request input {
+  width: 150px;
+  height: 30px;
+  background-color: rgba(255, 255, 255, 0);
+  padding-left: 1rem;
+  border: none;
+  border-right: 1px solid whit;
+}
+
+.request input::placeholder {
+  color: white;
+  font-size: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+.redbutton {
+  padding: 0.4rem 2rem;
+  width: 120px;
+  background-color: #e86044;
+  border: none;
+  border-radius: 10px;
+  color: white;
+
+}
+
+.clients {
+  width: 100%;
+  padding: 3rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(220, 220, 220, 0.322);
+  text-align: center;
+}
+
+.clients img {
+  transition: 0.4s ease;
+}
+
+.clients img:hover {
+  transform: scale(1.1);
+}
+
+.small_red {
+  color: rgb(233, 61, 61);
+}
+
+div.services {
+  padding: 2rem 3rem;
+}
+
+.cards {
+  display: flex;
+  padding: 2rem 3rem;
+  gap: 10px
+}
+
+.card {
+  text-align: center;
+  justify-content: center;
+  padding: 1rem;
+  border-radius: 2rem;
+  transition: 0.4s ease;
+}
+
+.card h1 {
+  font-size: 1.5rem;
+}
+
+.card h3 {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.card:hover {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+
+}
+
+.romantic {
+  display: flex;
+  padding: 2rem 3rem;
+}
+
+.romantic_pictures img {
+  border-radius: 40% 40% 0 0;
+  width: 4 00px;
+  border-right: 3px solid dodgerblue;
+  /* padding: 1rem; */
+}
+
+.romantic_text {
+  padding: 3rem;
+}
+
+.romantic_text h4 {
+  font-weight: 400;
+}
+
+.tip1 {
+  display: flex;
+}
+
+.fast-easy {
+  padding: 2rem 3rem;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.complicated_cart {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 20px;
+  width: 350px;
+  padding: 1rem;
+  height: 300px;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-120%);
+  background-color: white;
+}
+
+.banner1 {
+  background-image: url(./img/Rectangle\ 19294.png);
+  background-size: cover;
+  height: 300px;
+  text-align: center;
+  align-items: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  display: flex;
+  padding-left: 5rem;
+  color: white;
+}
+
+.promotion {
+  padding: 2rem 3rem;
+  display: flex;
+  position: relative;
+}
+
+.small_gallery {
+  display: flex;
+  gap: 15px;
+
+}
+
+.small_gallery img {
+  transition: 0.5s ease;
+}
+
+.promotion_right img {
+  border-radius: 40% 40% 0 0;
+  position: absolute;
+  right: 3rem;
+  z-index: -1;
+  border-left: 3px solid dodgerblue;
+  border-top: 3px solid dodgerblue;
+  padding: 5px;
+
+
+}
+
+.rasmcard h4 {
+  background-color: #DF6951;
+  width: 55px;
+  padding: 0.5rem;
+  border-radius: 10px;
+  transform: translateY(120%);
+  margin-left: 10px;
+  z-index: 10;
+
+}
+
+.small_gallery img:hover {
+  transform: scale(1.1);
+}
+
+.promotion_right h1 {
+  font-size: 2.9rem;
+}
+
+.promotion_left h3 {
+  width: 600px;
+  font-weight: 300;
+}
+
+.imagesss {
+  display: flex;
+  flex-direction: column;
+}
+
+.imagesss img:first-child {
+  width: 27vw;
+}
+
+.imagesss img:last-child {
+  width: 7rem;
+  transform: translateY(-30%);
+}
+
+.people {
+  display: flex;
+}
+.testimonals {
+  background-color: gainsboro;
+  display: flex;
+  flex-direction: column;
+}
+.testimonals h5 {
+  color: #DF6951;
+  text-align: center;
+  padding: 1rem;
+}
+.testimonals h1 {
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.testimonals img {
+  width: 200px;
+}
+.review-card {
+  width: 200px;
+  heigh: 200px
+}
