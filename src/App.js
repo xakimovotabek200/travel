@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import TravelExhibition from "./components/sodiqjon_exhibition/header_sodiqjon";
-// import Landscapes from "./pages/Landscapes/Landscapes";
+import Landscapes from "./pages/Landscapes/Landscapes";
 // import About from "./pages/about/About";
 import { Index } from "./pages/itravel/end";
 import Home from "./Home/home.jsx"
@@ -9,9 +9,9 @@ import Home from "./Home/home.jsx"
 function App() {
   return (
     <div>
-      <Home />
+      <Home />  
       <Index />
-      {/* <Landscapes /> */}
+      <Landscapes />
       <TravelExhibition />
       {/* <About /> */}
       {/* <About /> */}
